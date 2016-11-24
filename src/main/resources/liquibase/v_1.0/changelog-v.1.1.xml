@@ -1,0 +1,92 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="addNewUsers" author="system">
+        <insert tableName="User">
+            <column name="name" value="Poll Sanchez"/>
+            <column name="age" value="33"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="1"/>
+        </insert>
+
+        <insert tableName="User">
+            <column name="name" value="rerdf"/>
+            <column name="age" value="23"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="0"/>
+        </insert>
+
+        <insert tableName="User">
+            <column name="name" value="Sanchez"/>
+            <column name="age" value="33"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="1"/>
+        </insert>
+
+        <insert tableName="User">
+            <column name="name" value="Eddie"/>
+            <column name="age" value="2"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="0"/>
+        </insert>
+        <insert tableName="User">
+            <column name="name" value="Stop"/>
+            <column name="age" value="33"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="1"/>
+        </insert>
+
+        <insert tableName="User">
+            <column name="name" value="Spamming"/>
+            <column name="age" value="23"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="0"/>
+        </insert>
+
+        <insert tableName="User">
+            <column name="name" value="I'm"/>
+            <column name="age" value="33"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="1"/>
+        </insert>
+
+        <insert tableName="User">
+            <column name="name" value="TT"/>
+            <column name="age" value="73"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="0"/>
+        </insert>
+
+
+        <insert tableName="User">
+            <column name="name" value="Lol"/>
+            <column name="age" value="33"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="1"/>
+        </insert>
+
+        <insert tableName="User">
+            <column name="name" value="GG"/>
+            <column name="age" value="53"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="0"/>
+        </insert>
+
+        <insert tableName="User">
+            <column name="name" value="Kek"/>
+            <column name="age" value="33"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="1"/>
+        </insert>
+
+        <insert tableName="User">
+            <column name="name" value="ReRe"/>
+            <column name="age" value="12"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="0"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

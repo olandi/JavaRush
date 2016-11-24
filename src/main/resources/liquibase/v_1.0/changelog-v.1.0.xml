@@ -1,0 +1,43 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+   <changeSet id="createUsersTable" author="system">
+        <createTable tableName="User">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(25)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="age" type="INT">
+                <constraints nullable="true"/>
+            </column>
+            <column name="createdDate" type="TIMESTAMP">
+                <constraints nullable="true"/>
+            </column>
+            <column name="isAdmin" type="TINYINT">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="addUsers" author="system">
+        <insert tableName="User">
+            <column name="id" value="1"/>
+            <column name="name" value="Poll Sanchez"/>
+            <column name="age" value="33"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="1"/>
+        </insert>
+
+        <insert tableName="User">
+            <column name="id" value="2"/>
+            <column name="name" value="Fry"/>
+            <column name="age" value="26"/>
+            <column name="createdDate" value="2016-11-12"/>
+            <column name="isAdmin" value="0"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
